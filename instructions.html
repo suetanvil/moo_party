@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Moo! Party! Instructions!</title>
+
+  <link rel="stylesheet" type="text/css" href="moo_party.css"> 
+</head>
+<body>
+  <div class="instr-block">
+    <br/><br/>
+    <h1> Instructions </h>
+
+<h2>How do I make the cows say things? </h2>
+
+Type your message in the text box at the bottom of the page and press
+"Moo It!".  The cow will say your message.  Or at least, it will be
+displayed in a speech bubble.
+
+<h2>How do I get multiple cows and/or make them face different directions? </h2>
+
+<P> The '@' character separates your text across cows.  Sticking in an
+  '@' puts the following text in a new cow.  For example, this creates
+  three cows:
+  <pre>
+
+    Mooo? @ Moooo. @ Mooo!
+  </pre>
+
+<P> Note that there is a space both before and after the '@'. <b>This is
+    very important!</b>  Without it, the '@' will remain part of the
+    message.  For example, this becomes one cow's message:
+  <pre>
+
+    I'm a cow.  Email me at cow@moo.com.  I'm @cow on Twitter.  I
+    don't use Facebook.
+  </pre>
+
+<P> You can tweak the behavior of the cow generator by putting certain
+   characters after the '@'.  Specifically:
+
+  <ul>
+    <li> &gt; puts the new cow to the right instead of below.
+    <li> ! makes the new cow face right instead of left.
+    <li> * makes the new cow replace the previous cow.  This is useful
+      when you want to use one of the other codes on the first cow.
+      There's usually no way to do this because '@' is a separator.
+    <li> Any other punctuation characters are ignored right now but
+      may do things in the future.
+  </ul>
+
+<P> As a special case, if the first two characters are '@@', the first
+  '@' is dropped and the rest of the sequence is inserted into the text.
+  This lets you make the cow say things that would otherwise be
+  separators:
+  <pre>
+
+    A separator looks like this: @@>!.
+  </pre>
+
+<h2>Why are some of the characters replaced with question marks?</h2>
+
+<P>Unfortunately, this website can only deal with plain, old-school
+<a href="https://en.wikipedia.org/wiki/ASCII">ASCII</a> text.  All
+other characters are replaced with '?'.
+
+<P>The underlying reason for this is that <code>moo.party</code>
+  depends on the fonts having a fixed width (i.e. all characters take up
+  exactly the same amount of space on the screen.)  The default fixed
+  font doesn't do this for (most) non-ASCII characters and this wrecks
+  the layout.
+
+<P>Think of it as replicating an 1980's North American computing
+  experience.
+
+  
+<h2>How do I share my cow dialogues with others?</h2>
+
+<P> There is a link to a view-only version of this dialog at the
+  bottom of the page labeled "view-only".  Copy it to your clipboard
+  (on Firefox, this is right-click and "Copy Link Location"; other
+  browsers may vary) and paste it into your preferred messaging system.
+
+<P> There's also a link labeled "editable" that opens your dialog in a
+  normal moo.party page for when you want your recipient to be able to
+  edit it.
+
+<h2>Clicking on "editable" or "view-only" doesn't do anything.</h2>
+
+Yes.
+
+<h2>Why?</h2>
+
+It's hard to do and I'm lazy.  Also, you don't actually need it for
+anything except copying the link to the clipboard.  If you really want
+to view the link, just open it in a new tab or window.
+
+<h2>Who made this? And why? And how?</h2>
+
+All of the details are
+<a href="https://github.com/suetanvil/moo_party/blob/master/README.md">here</a>.
+
+<h2>Why the question-and-answer format?</h2>
+
+Moooooooo.
+  
+
+  </div>
+  
+</body>
+</html>
+

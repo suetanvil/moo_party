@@ -1,0 +1,42 @@
+/* This file is part of moo.party; Copyright (C) 2017 Chris Reuter;
+   BSD License; all rights reserved. */
+
+a, body, textarea, .cowsay-button, .instr-block { 
+    color: green; 
+    background: black;
+    font-size: 12pt;
+    font-style: normal;
+    font-family: "Fixed", monospace;
+}
+
+.instr-block {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 120ex;
+    margin-bottom: 5em;
+}
+
+.cowsay-button {
+    background-color: black;
+    border: 4px solid green;
+}
+
+.cowsay-button:active {
+    background-color: green;
+    color: black;
+}
+
+.input-region {
+    margin-left: 20ex;
+}
+
+textarea {
+    outline: 3px solid green;
+    border: none;
+    margin-left: 2ex;
+}
+
+textarea:focus {
+    outline: 4px solid green;
+}
+

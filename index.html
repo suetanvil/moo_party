@@ -2,43 +2,54 @@
 <html lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Moo</title>
+  <title>Moo! Party!</title>
 
-  <style type="text/css">
-    body { 
-        color: green; 
-        background: black;
-        font-size: 12pt;
-        font-style: normal;
-        font-family: "Fixed", monospace;
-    }
+  <link rel="stylesheet" type="text/css" href="moo_party.css"> 
 
-    a {
-        color: black;
-        background: green;
-        font-size: 12pt;
-        font-style: normal;
-        font-family: "Fixed", monospace;
-    }
-  </style>
+  <!-- We need jQuery; fetch a local copy for offline use if necessary. -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script> --
+
+  <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+  <script src="js/lz-string.min.js"></script>  
+  <script src="js/cowbuilder.js"></script>
+  <script src="js/moo_party.js"></script>
 </head>
 <body>
-  <pre>
-
-
-
-
-
-
-                 _____ 
-                &lt; moo &gt;
-                 ----- 
+  <br/><br/>
+  
+  <pre id="ascii_art">
+                 _____________________ 
+                &lt; Turn on JavaScript! &gt;
+                 ---------------------
                         \   ^__^
                          \  (oo)\_______
                             (__)\       )\/\
                                 ||----w |
                                 ||     ||
 
+
   </pre>
+
+  <br><br><br><br><br><br>
+
+  <div id="cowsay-input-form" hidden>
+    <div class="input-region">
+      Make the cows say things:
+      <br><br>
+      <textarea name="cowsay" id="cowsay-text"
+                style="width:80ex;height:6em;"></textarea>
+      <br><br>
+      <button class="cowsay-button" id="cowsay-submit">Moo It!</button>
+
+    </div>  
+
+    <br> Direct links to this
+    (<a id="cow-dlg-link-edit" href="index.html">editable</a> and  
+    <a id="cow-dlg-link" href="index.html">view-only</a>). 
+    <br> <a href="instructions.html">Instructions</a>
+    <br> <a href="http://github.com/suetanvil/moo_party">Source code</a>
+  </div>
+  
 </body>
 </html>
+
