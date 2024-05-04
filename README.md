@@ -1,7 +1,7 @@
 # moo.party
 
 A website to make ASCII-art cows say things.  See it
-[here](http://moo.party).
+[here](https://moo-party.neocities.org/).
 
 ## Overview
 
